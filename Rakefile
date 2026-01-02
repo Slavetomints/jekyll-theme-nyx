@@ -8,7 +8,6 @@ GEM_NAME  = "jekyll-theme-nyx"
 VERSION   = Jekyll::Theme::Nyx::VERSION
 GEM_FILE  = "#{GEM_NAME}-#{VERSION}.gem"
 VERSION_FILE = "lib/jekyll/theme/nyx/version.rb"
-TEST_SITE = "test-site"
 
 def ensure_clean_git!
   unless `git status --porcelain`.strip.empty?
@@ -41,12 +40,8 @@ end
 
 desc "Build dummy site to verify theme"
 task :site do
-  abort "[-] test-site not found" unless Dir.exist?(TEST_SITE)
-
-  Dir.chdir(TEST_SITE) do
-    sh "bundle install"
-    sh "bundle exec jekyll build"
-  end
+  sh "bundle install"
+  sh "bundle exec jekyll build"
 
   puts "[+] Dummy site builds successfully"
 end
