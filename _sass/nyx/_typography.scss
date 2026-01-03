@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: $space-4;
+  align-self: center;
+}
+
+p {
+  margin: $space-2 0;
+}
+
+ul,
+ol {
+  padding-left: $space-4;
+}
+
+blockquote {
+  margin: $space-3 0;
+  padding-left: $space-3;
+  border-left: 3px solid $accent;
+  color: $muted;
+}
