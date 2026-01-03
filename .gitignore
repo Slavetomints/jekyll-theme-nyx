@@ -6,4 +6,4 @@
 /tmp/
 *.gem
 /test-site/
-/_site/
+_site/*
