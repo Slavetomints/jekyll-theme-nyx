@@ -7,3 +7,4 @@
 *.gem
 /test-site/
 _site/*
+assets/img/_site
