@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<main>
-  <p>{{ page.date }} - Written by {{ page.author }}</p>
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date: "%B %d, %Y" }} – Written by {{ page.author }}</p>
 
-  <div id="content">
-    {{ content }}
-  </div>
+<main>
+  {{ content }}
 </main>

@@ -13,6 +13,8 @@ footer {
 }
 
 main {
-  display: block;
-  padding: $space-1;
+  display: flex;
+  flex-direction: column;
+  padding: $space-5;
+  min-width: 0;
 }

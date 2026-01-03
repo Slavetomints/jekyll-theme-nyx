@@ -8,8 +8,6 @@ tags: [blog, help]
 description: Showcase of the how markdown looks on this site
 ---
 
-# Rendered Markdown
-
 ## Headers
 
 # Header 1
@@ -75,11 +73,30 @@ and
 This is a code block
 ```
 
-```ruby
-# This is a code block with syntax highlighting
-one = 1
-two = 2
-puts "#{one} + #{two} = #{one + two}"
+<br>
+
+```rb
+class Person
+  attr_reader :name, :age
+  def initialize(name, age)
+    @name, @age = name, age
+  end
+  def <=>(person) # the comparison operator for sorting
+    @age <=> person.age
+  end
+  def to_s
+    "#{@name} (#{@age})"
+  end
+end
+
+group = [
+  Person.new("Bob", 33),
+  Person.new("Chris", 16),
+  Person.new("Ash", 23)
+]
+
+puts group.sort.reverse
+
 ```
 
 ## Images

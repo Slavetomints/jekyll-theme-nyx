@@ -1,2 +1,11 @@
 title: Test Site
 theme: jekyll-theme-nyx
+
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: true
