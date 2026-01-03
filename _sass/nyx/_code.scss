@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+code {
+  font-family: $font-mono;
+  font-size: 0.95em;
+  background: $bg-alt;
+  padding: 0.15em 0.35em;
+  border-radius: $radius;
+}
+
+pre {
+  background: $bg-alt;
+  padding: $space-3;
+  overflow-x: auto;
+  border-radius: $radius;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}

@@ -1,5 +1,7 @@
 ---
 title: Markdown Showcase
+layout: post
+author: Slavetomints
 date: 2026-01-02
 categories: [Blog]
 tags: [blog, help]
@@ -36,9 +38,13 @@ Basic Text
 
 > Blockquotes look like this!
 
+or
+
 > If they span multiple lines, 
 > 
 > they can look like this!
+
+and
 
 > You can also have
 > > Nested blockquotes!

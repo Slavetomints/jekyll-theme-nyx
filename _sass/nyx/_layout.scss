@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+#sidebar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+header,
+footer {
+  padding: $space-3 0;
+}
+
+main {
+  display: block;
+  padding: $space-1;
+}
