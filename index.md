@@ -3,14 +3,8 @@ layout: default
 title: Home
 ---
 
-# Hello Nyx
+# Hello Nyx!
 
-This is a test page.
----
-layout: default
-title: Home
----
+This is a live demo of Nyx, a simple Jekyll theme.
 
-# Hello Nyx
-
-This is a test page.
+[link to demo post](/blog/2026/01/02/markdown-showcase.html)
