@@ -1,11 +1,22 @@
-title: Test Site
+title: Nyx Demo
 theme: jekyll-theme-nyx
 
 markdown: kramdown
+
 
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: highlight
-    span:
+    block:
       line_numbers: true
+
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - LICENSE
+  - Rakefile
+  - CHANGELOG.md
+  - CODE_OF_CONDUCT.md
