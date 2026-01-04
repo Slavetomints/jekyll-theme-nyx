@@ -18,3 +18,6 @@
   - Layouts
   - Syntax Highlighting
 
+## [0.2.1] - 2026-01-04
+
+- Fixed Syntax Highlighting
