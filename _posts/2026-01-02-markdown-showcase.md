@@ -96,7 +96,6 @@ group = [
 ]
 
 puts group.sort.reverse
-
 ```
 
 ## Images
