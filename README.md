@@ -1,43 +1,107 @@
-# Jekyll::Theme::Nyx
+# jekyll-theme-nyx
 
-TODO: Delete this and the text below, and describe your gem
+Nyx is a dark mode based Jekyll theme focused on readability, clean typography, and simple blogging. It is designed to work out-of-the-box as a RubyGem-based theme while still being easy to customize via SCSS.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/theme/nyx`. To experiment with that code, run `bin/console` for an interactive prompt.
+---
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your Jekyll site’s `Gemfile`:
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem "jekyll-theme-nyx"
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Then install the gem:
 
-```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```sh
+bundle install
+```
+
+Next, enable the theme in your _config.yml:
+
+```yml
+theme: jekyll-theme-nyx
+```
+
+Build or serve your site to verify everything works:
+
+```sh
+bundle exec jekyll serve
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+This theme follows standard Jekyll conventions.
+
+### Layouts
+
+Nyx provides the following layouts:
+
+- `default` – base layout
+- `post` – blog post layout
+
+You can select a layout per page or post:
+
+```yml
+layout: post
+```
+
+### Styling
+
+All styles are written in SCSS and live under:
+
+```
+_sass/nyx/
+```
+
+The main entrypoint is:
+
+```
+assets/css/nyx.scss
+```
+
+If you want to override styles, you can:
+
+- copy partials from `_sass/nyx/` into your own project
+- or add custom styles after importing `nyx.scss`
+
+### Includes
+
+Reusable components live in `_includes/`, such as:
+
+- `sidebar.html`
+
+These can be overridden by copying them into your site’s `_includes/` directory.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To work on the theme locally:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```sh
+bundle install
+bundle exec jekyll serve
+```
 
-## Contributing
+This repository includes a dummy Jekyll site for testing theme changes.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-theme-nyx. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/jekyll-theme-nyx/blob/main/CODE_OF_CONDUCT.md).
+Useful tasks:
 
-## License
+```sh
+rake site    # build the dummy site
+rake build   # build the gem
+```
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Built gems are placed in the pkg/ directory.
 
-## Code of Conduct
+## Contributing 
 
-Everyone interacting in the Jekyll::Theme::Nyx project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/jekyll-theme-nyx/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/Slavetomints/jekyll-theme-nyx. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Slavetomints/jekyll-theme-nyx/blob/main/CODE_OF_CONDUCT.md). 
+
+## License 
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT). 
+
+## Code of Conduct 
+
+Everyone interacting in the jekyll-theme-nyx project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Slavetomints/jekyll-theme-nyx/blob/main/CODE_OF_CONDUCT.md).

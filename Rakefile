@@ -11,6 +11,7 @@ def current_version
 end
 
 GEM_NAME = GEMSPEC.sub(/\.gemspec$/, "")
+GEM_FILE = "#{GEM_NAME}-#{current_version}.gem"
 
 desc "Build dummy site to verify theme"
 task :site do
@@ -22,12 +23,12 @@ end
 desc "Build the gem"
 task :build do
   sh "gem build #{GEMSPEC}"
+  puts "[+] Built #{GEM_FILE}"
 end
 
 desc "Push gem to RubyGems"
 task :push do
-  gem_file = "#{GEM_NAME}-#{current_version}.gem"
-  sh "gem push #{gem_file}"
+  sh "gem push #{GEM_FILE}"
 end
 
 desc "Create and push git tag"
