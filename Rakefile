@@ -4,7 +4,6 @@ require "rake"
 require "fileutils"
 
 GEMSPEC = "jekyll-theme-nyx.gemspec"
-PKG_DIR = "pkg"
 
 # Helper to get current version from gemspec
 def current_version
@@ -21,17 +20,15 @@ task :site do
   puts "[+] Dummy site builds successfully"
 end
 
-desc "Build the gem into pkg/"
+desc "Build the gem"
 task :build do
-  FileUtils.mkdir_p(PKG_DIR)
   sh "gem build #{GEMSPEC}"
-  FileUtils.mv(GEM_FILE, File.join(PKG_DIR, GEM_FILE))
-  puts "[+] Built #{PKG_DIR}/#{GEM_FILE}"
+  puts "[+] Built #{GEM_FILE}"
 end
 
 desc "Push gem to RubyGems"
 task :push do
-  sh "gem push #{File.join(PKG_DIR, GEM_FILE)}"
+  sh "gem push #{GEM_FILE}"
 end
 
 desc "Create and push git tag"
