@@ -41,3 +41,12 @@
 - Update header style
 - Fixed bug causing line breaks to appear as dots
 - Added lorem ipsum to the demo post
+
+### [0.3.0] - 2026-01-06
+
+- Added issue templates
+- Added the following pages:
+  - /posts/
+  - /tags/
+  - /categories/
+  - /about/
