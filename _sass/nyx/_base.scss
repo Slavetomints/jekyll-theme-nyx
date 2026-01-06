@@ -27,6 +27,22 @@ a:hover {
   text-decoration: underline;
 }
 
+header a {
+  color: $muted;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: $fg
+}
+
+header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -35,6 +51,6 @@ img {
 
 hr {
   border: none;
-  border-top: 2px solid #f8f8f2;
+  border-top: 2px solid $fg;
   margin: 1.5rem 0;
 }
