@@ -2,8 +2,6 @@ title: Nyx Demo
 theme: jekyll-theme-nyx
 
 markdown: kramdown
-
-
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -21,3 +19,9 @@ exclude:
   - CHANGELOG.md
   - CODE_OF_CONDUCT.md
   - "certs/slavetomints.pem"
+
+collections:
+  tabs:
+    output: true
+    permalink: /:name/
+    sort_by: order
