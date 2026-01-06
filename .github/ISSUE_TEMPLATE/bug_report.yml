@@ -1,5 +1,7 @@
 name: Bug Report
 description: Create a report to help us improve
+labels:
+  - bug
 body:
   - type: textarea
     attributes:
@@ -41,3 +43,5 @@ body:
     attributes:
       label: Anything else?
       description: |
+        Add any extra context here.
+        Logs, screenshots, or weird edge cases welcome.
