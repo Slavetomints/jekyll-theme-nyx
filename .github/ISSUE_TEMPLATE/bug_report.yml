@@ -1,7 +1,6 @@
 name: Bug Report
 description: Create a report to help us improve
 body:
-
   - type: textarea
     attributes:
       label: Describe the bug
