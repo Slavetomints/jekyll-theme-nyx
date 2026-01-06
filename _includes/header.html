@@ -1,0 +1,11 @@
+<header>
+  {% assign tabs = site.tabs | sort: "nav_order" %}
+  <ul>
+    <li><a href="/">Home</a></li>
+    {% for tab in tabs %}
+      <li><a href="{{ tab.url | relative_url }}" class="{% if page.url == tab.url %}active{% endif %}">
+          {{ tab.title }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</header>
