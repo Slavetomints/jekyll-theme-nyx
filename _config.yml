@@ -9,7 +9,6 @@ kramdown:
     block:
       line_numbers: true
 
-
 exclude:
   - "*.gem"
   - "*.gemspec"
