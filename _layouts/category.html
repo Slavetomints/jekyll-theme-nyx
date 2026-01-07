@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>Category: {{ page.category }}</h1>
+
+<ul class="post-list">
+  {% for post in page.posts %}
+    <li class="post-item">
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <time>{{ post.date | date: "%B %d, %Y" }}</time>
+      {% if post.description %}
+        <p>{{ post.description | strip_html }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
