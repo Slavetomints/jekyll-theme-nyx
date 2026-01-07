@@ -50,3 +50,11 @@
   - /tags/
   - /categories/
   - /about/
+
+#### [0.3.1] - 2026-01-06
+- Added Pull Request Templates
+- Moved the Issue templates to `yml`
+- Create plugin to generate subpages for tags and categories
+  - added styling for tag and category tabs
+- Added Contribution guide
+- Added Security policy
