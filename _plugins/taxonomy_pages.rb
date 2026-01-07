@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jekyll
   class TaxonomyPages < Generator
     safe true
@@ -7,8 +9,8 @@ module Jekyll
         site.pages << TaxonomyPage.new(
           site,
           site.source,
-          File.join("tags", tag.downcase.gsub(" ", "-")),
-          "tag.html",
+          File.join('tags', tag.downcase.gsub(' ', '-')),
+          'tag.html',
           tag,
           posts
         )
@@ -18,8 +20,8 @@ module Jekyll
         site.pages << TaxonomyPage.new(
           site,
           site.source,
-          File.join("categories", category.downcase.gsub(" ", "-")),
-          "category.html",
+          File.join('categories', category.downcase.gsub(' ', '-')),
+          'category.html',
           category,
           posts
         )
@@ -32,14 +34,14 @@ module Jekyll
       @site = site
       @base = base
       @dir  = dir
-      @name = "index.html"
+      @name = 'index.html'
 
       process(@name)
-      read_yaml(File.join(base, "_layouts"), layout)
+      read_yaml(File.join(base, '_layouts'), layout)
 
-      data["posts"] = posts
-      data[layout.sub(".html", "")] = name
-      data["title"] = name
+      data['posts'] = posts
+      data[layout.sub('.html', '')] = name
+      data['title'] = name
     end
   end
 end
