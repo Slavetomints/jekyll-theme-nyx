@@ -76,3 +76,50 @@ main {
   color: $fg;
   line-height: 1.6;
 }
+
+/* taxonomy lists (tags + categories) */
+
+.taxonomy-list {
+  list-style: none;
+  padding: 0;
+  margin: $space-4 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: $space-3;
+}
+
+.taxonomy-item {
+  background: $bg-alt;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: $radius;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.taxonomy-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: $space-3;
+  text-decoration: none;
+  color: $fg;
+}
+
+.taxonomy-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.taxonomy-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.taxonomy-count {
+  font-size: 0.85rem;
+  color: $muted;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
