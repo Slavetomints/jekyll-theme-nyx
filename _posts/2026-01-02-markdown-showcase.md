@@ -3,8 +3,8 @@ title: Markdown Showcase
 layout: post
 author: Slavetomints
 date: 2026-01-02
-categories: [Blog]
-tags: [blog, help]
+categories: [Demos]
+tags: [demo, markdown]
 description: Showcase of the how markdown looks on this site
 ---
 
