@@ -33,6 +33,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 0.75rem;
   padding: 1.5rem;
+  position: relative;
 
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
