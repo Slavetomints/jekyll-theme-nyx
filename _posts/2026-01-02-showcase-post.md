@@ -1,11 +1,10 @@
 ---
-title: Markdown Showcase
-layout: post
+title: Post Showcase
 author: Slavetomints
 date: 2026-01-02
 categories: [Demos]
 tags: [demo, markdown]
-description: Showcase of the how markdown looks on this site
+description: Showcase of the how posts look on this site
 ---
 
 ## Headers
