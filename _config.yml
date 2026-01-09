@@ -24,3 +24,11 @@ collections:
     output: true
     permalink: /:name/
     sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values: 
+      layout: post
+      permalink: /posts/:title/
