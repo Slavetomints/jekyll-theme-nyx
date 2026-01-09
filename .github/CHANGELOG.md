@@ -58,3 +58,14 @@
   - added styling for tag and category tabs
 - Added Contribution guide
 - Added Security policy
+
+#### [0.3.2] - 2026-01-09
+
+**BUGS**
+- Fixed [Issue with selecting post in the posts tab](https://github.com/Slavetomints/jekyll-theme-nyx/issues/13)
+
+**ENHANCEMENTS**
+- Implemented [Add more demo posts](https://github.com/Slavetomints/jekyll-theme-nyx/issues/14)
+
+**MISC**
+- Cleaned up repo root by moving files to `.github`

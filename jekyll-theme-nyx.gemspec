@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name = 'jekyll-theme-nyx'
-  spec.version = '0.3.1'
+  spec.version = '0.3.2'
   spec.authors = ['Slavetomints']
   spec.email = ['me@slavetomints.com']
 
-  spec.summary = 'Simple Jekyll Theme'
+  spec.summary = 'Simple Dark Mode Oriented Jekyll Theme'
   spec.description = <<~DESC
     Nyx is a dark mode based Jekyll theme focused on readability,
     clean typography, and simple blogging.

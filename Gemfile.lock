@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-nyx (0.3.1)
+    jekyll-theme-nyx (0.3.2)
       jekyll (~> 4.0)
 
 GEM
