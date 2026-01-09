@@ -1,6 +1,5 @@
 ---
 title: Syntax Highlighting
-layout: post
 author: Slavetomints
 date: 2026-01-07
 categories: [Demos]
