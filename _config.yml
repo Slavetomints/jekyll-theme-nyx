@@ -25,6 +25,9 @@ collections:
     permalink: /:name/
     sort_by: order
 
+plugins:
+  - jekyll-toc
+
 defaults:
   - scope:
       path: ""
@@ -32,3 +35,4 @@ defaults:
     values: 
       layout: post
       permalink: /posts/:title/
+      toc: true
