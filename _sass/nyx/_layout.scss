@@ -124,3 +124,20 @@ main {
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
 }
+
+#toc {
+  border: 2px solid $fg;
+}
+
+#toc li {
+  list-style: none;
+}
+
+#toc a {
+  color: $muted
+}
+
+#toc a:hover{
+  text-decoration: none;
+  color: $fg;
+}
