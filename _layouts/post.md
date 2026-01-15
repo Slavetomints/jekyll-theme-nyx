@@ -6,7 +6,12 @@ layout: default
   <p>{{ page.date | date: "%B %d, %Y" }} – Written by {{ page.author }}</p>
 </header>
 
-<h2>Table of Contents</h2>
-
-{{ content | toc}}
-
+<div id="post-container">
+  <article>
+    {{ content }}
+  </article>
+  <aside>
+    <h2>Table of Contents</h2>
+    {{ content | toc_only }}
+  </aside>
+</div>

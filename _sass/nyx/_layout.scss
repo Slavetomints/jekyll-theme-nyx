@@ -5,6 +5,18 @@ footer {
   padding: $space-2 $space-3;
 }
 
+aside {
+  width: auto;
+  flex-shrink: 0;
+
+  position: sticky;
+  top: $space-4;
+
+  max-height: calc(100vh - $space-4 * 2);
+  overflow-y: auto;
+}
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -15,6 +27,15 @@ main {
     padding: $space-4;
   }
 }
+
+/* POST CONTAINER */
+#post-container {
+  display: flex;
+  gap: $space-4;
+  align-items: flex-start;
+}
+
+
 
 /* STYLING FOR /POSTS/ */
 
@@ -125,9 +146,6 @@ main {
   border-radius: 999px;
 }
 
-#toc {
-  border: 2px solid $fg;
-}
 
 #toc li {
   list-style: none;
