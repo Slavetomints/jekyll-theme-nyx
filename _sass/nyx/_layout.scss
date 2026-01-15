@@ -5,6 +5,22 @@ footer {
   padding: $space-2 $space-3;
 }
 
+aside {
+  width: auto;
+  flex-shrink: 0;
+
+  position: sticky;
+  top: $space-4;
+
+  max-height: calc(100vh - $space-4 * 2);
+  overflow-y: auto;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -15,6 +31,17 @@ main {
     padding: $space-4;
   }
 }
+
+/* POST CONTAINER */
+#post-container {
+  display: flex;
+  gap: $space-4;
+    @media (max-width: 600px) {
+    display: block;;
+  }
+}
+
+
 
 /* STYLING FOR /POSTS/ */
 
@@ -123,4 +150,18 @@ main {
   background: rgba(255, 255, 255, 0.06);
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
+}
+
+
+#toc li {
+  list-style: none;
+}
+
+#toc a {
+  color: $muted
+}
+
+#toc a:hover{
+  text-decoration: none;
+  color: $fg;
 }
