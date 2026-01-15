@@ -14,6 +14,10 @@ aside {
 
   max-height: calc(100vh - $space-4 * 2);
   overflow-y: auto;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 
@@ -32,7 +36,9 @@ main {
 #post-container {
   display: flex;
   gap: $space-4;
-  align-items: flex-start;
+    @media (max-width: 600px) {
+    display: block;;
+  }
 }
 
 
