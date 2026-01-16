@@ -69,3 +69,15 @@
 
 **MISC**
 - Cleaned up repo root by moving files to `.github`
+
+#### [0.3.3] - 2026-01-16
+
+**BUGS**
+- Fixed a [fix mobile header padding bug](https://github.com/Slavetomints/jekyll-theme-nyx/pull/24)
+
+**ENHANCEMENTS**
+- Added a [Table of Contents](https://github.com/Slavetomints/jekyll-theme-nyx/pull/26)
+- Added a [favicon](https://github.com/Slavetomints/jekyll-theme-nyx/pull/25)
+
+***MISC**
+There is now a linked [GitHub Project](https://github.com/users/Slavetomints/projects/1) for this gem.
